@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ahmed's Socials</title>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .subtitle {
+      color: #777;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      width: 100%;
+      padding: 16px;
+      margin: 15px 0;
+
+      border-radius: 14px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+
+      transition: 0.2s;
+    }
+
+    .social-button:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+
+    /* Instagram */
+    .instagram {
+      background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+      );
+    }
+
+    /* Snapchat */
+    .snapchat {
+      background: #fffc00;
+      color: #111;
+    }
+
+    /* ONLY the Snapchat logo is white */
+    .snapchat i {
+      color: white;
+      -webkit-text-stroke: 1.5px #111;
+      text-shadow: 0 0 1px #111;
+    }
+
+    /* WhatsApp */
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .social-button i {
+      font-size: 24px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      color: #aaa;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- ONLY ONE TITLE -->
+    <h1>Ahmed's Socials</h1>
+
+    <p class="subtitle">Connect with me</p>
+
+    <!-- Instagram -->
+    <a
+      class="social-button instagram"
+      href="https://www.instagram.com/a7med_mo7amed2012?stkn=MzQzNGw4bno5M2pz"
+      target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+      Instagram
+    </a>
+
+    <!-- Snapchat -->
+    <a
+      class="social-button snapchat"
+      href="https://www.snapchat.com/add/ahmedmoh3652?share_id=sAJipEOCF0A&locale=en-EG"
+      target="_blank">
+      <i class="fa-brands fa-snapchat"></i>
+      Snapchat
+    </a>
+
+    <!-- WhatsApp -->
+    <a
+      class="social-button whatsapp"
+      href="#"
+      target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      WhatsApp — @A7madMohamed
+    </a>
+
+    <div class="footer">
+      © 2026 Ahmed
+    </div>
+
+  </div>
+
+</body>
+</html>
