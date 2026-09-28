@@ -6,8 +6,11 @@
 
   <title>Ahmed's Socials</title>
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
 
   <style>
     * {
@@ -20,55 +23,81 @@
     body {
       min-height: 100vh;
       background: white;
+
       display: flex;
       justify-content: center;
       align-items: center;
+
+      padding: 20px;
     }
 
     .container {
-      width: 90%;
+      width: 100%;
       max-width: 420px;
       text-align: center;
     }
 
+    /* Title */
     h1 {
       font-size: 38px;
-      margin-bottom: 10px;
       color: #111;
+      margin-bottom: 8px;
     }
 
+    /* Subtitle */
     .subtitle {
       color: #777;
-      margin-bottom: 30px;
       font-size: 16px;
+      margin-bottom: 30px;
     }
 
+    /* Social buttons */
     .social-button {
+      width: 100%;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       gap: 12px;
 
-      width: 100%;
       padding: 16px;
       margin: 15px 0;
 
       border-radius: 14px;
+
       text-decoration: none;
-      color: white;
+
       font-size: 18px;
       font-weight: bold;
 
-      transition: 0.2s;
+      transition: transform 0.2s ease,
+                  opacity 0.2s ease,
+                  box-shadow 0.2s ease;
     }
 
     .social-button:hover {
       transform: translateY(-3px);
-      opacity: 0.9;
+      opacity: 0.92;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     }
 
-    /* Instagram */
+    .social-button:active {
+      transform: scale(0.97);
+    }
+
+    .social-button i {
+      font-size: 24px;
+    }
+
+
+    /* =========================
+       INSTAGRAM
+       ========================= */
+
     .instagram {
+      color: white;
+
       background: linear-gradient(
         45deg,
         #feda75,
@@ -79,33 +108,62 @@
       );
     }
 
-    /* Snapchat */
+
+    /* =========================
+       SNAPCHAT
+       ========================= */
+
     .snapchat {
       background: #fffc00;
       color: #111;
     }
 
-    /* ONLY the Snapchat logo is white */
+    /* Only the Snapchat logo is white */
     .snapchat i {
       color: white;
+
+      /* Dark outline so the white logo is visible */
       -webkit-text-stroke: 1.5px #111;
-      text-shadow: 0 0 1px #111;
+
+      text-shadow:
+        0 0 1px #111;
     }
 
-    /* WhatsApp */
+
+    /* =========================
+       WHATSAPP
+       ========================= */
+
     .whatsapp {
       background: #25D366;
+      color: white;
     }
 
-    .social-button i {
-      font-size: 24px;
-    }
 
+    /* Footer */
     .footer {
       margin-top: 30px;
+
       color: #aaa;
+
       font-size: 13px;
     }
+
+
+    /* Mobile */
+    @media (max-width: 480px) {
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .social-button {
+        font-size: 17px;
+        padding: 15px;
+      }
+
+    }
+
   </style>
 </head>
 
@@ -113,38 +171,58 @@
 
   <div class="container">
 
-    <!-- ONLY ONE TITLE -->
+    <!-- ONE TITLE ONLY -->
     <h1>Ahmed's Socials</h1>
 
-    <p class="subtitle">Connect with me</p>
+    <p class="subtitle">
+      Connect with me
+    </p>
 
-    <!-- Instagram -->
+
+    <!-- INSTAGRAM -->
     <a
       class="social-button instagram"
       href="https://www.instagram.com/a7med_mo7amed2012?stkn=MzQzNGw4bno5M2pz"
-      target="_blank">
+      target="_blank"
+      rel="noopener noreferrer">
+
       <i class="fa-brands fa-instagram"></i>
+
       Instagram
+
     </a>
 
-    <!-- Snapchat -->
+
+    <!-- SNAPCHAT -->
     <a
       class="social-button snapchat"
       href="https://www.snapchat.com/add/ahmedmoh3652?share_id=sAJipEOCF0A&locale=en-EG"
-      target="_blank">
+      target="_blank"
+      rel="noopener noreferrer">
+
       <i class="fa-brands fa-snapchat"></i>
+
       Snapchat
+
     </a>
 
-    <!-- WhatsApp -->
+
+    <!-- WHATSAPP -->
+    <!-- Your phone number is hidden inside the link -->
     <a
       class="social-button whatsapp"
-      href="#"
-      target="_blank">
+      href="https://wa.me/201207623343"
+      target="_blank"
+      rel="noopener noreferrer">
+
       <i class="fa-brands fa-whatsapp"></i>
+
       WhatsApp — @A7madMohamed
+
     </a>
 
+
+    <!-- FOOTER -->
     <div class="footer">
       © 2026 Ahmed
     </div>
